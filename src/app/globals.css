@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+*{
+	box-sizing: border-box;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--white: #ffffff;
+	--black: #161C24;
+	--light-gray: #C4CDD5;
+	--gray: #454F5B;
+	--stroke: #EAEAEA;
+	--primary: #00999E;
+	--main: #4295E4;
+	--light-blue: #ADD7FF;
+	--rad: #E44286;
+	--text-disable: #ADADAD;
+	--bg-light: #F2F8FF;
+	--scrollbar-width: 0px;
+}
+@media(hover: hover){
+	:root{
+		--scrollbar-width: 5px
+	}
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-white: var(--white);
+	--color-black: var(--black);
+	--color-light-gray: var(--light-gray);
+	--color-gray: var(--gray);
+	--color-stroke: var(--stroke);
+	--color-primary: var(--primary);
+	--color-main: var(--main);
+	--color-light-blue: var(--light-blue);
+	--color-rad: var(--rad);
+	--color-text-disable: var(--text-disable);
+	--color-bg-light: var(--bg-light);
+	--breakpoint-1500: 1500px;
+	--breakpoint-1450: 1450px;
+	--breakpoint-1400: 1400px;
+	--breakpoint-1300: 1300px;
+	--breakpoint-1230: 1230px;
+	--breakpoint-1100: 1100px;
+	--breakpoint-1050: 1050px;
+	--breakpoint-990: 990px;
+	--breakpoint-930: 930px;
+	--breakpoint-850: 850px;
+	--breakpoint-800: 800px;
+	--breakpoint-750: 750px;
+	--breakpoint-700: 700px;
+	--breakpoint-650: 650px;
+	--breakpoint-600: 600px;
+	--breakpoint-550: 550px;
+	--spacing-screenSmart: calc(100dvw - var(--scrollbar-width))
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+	background: var(--white);
+	color: var(--black);
+	font-family: var(--sf-pro-display);
+	font-weight: 300;
+}
+*::-webkit-scrollbar{
+	width: 5px;
+}
+*::-webkit-scrollbar-thumb{
+	background: var(--main);
+	width: 5px;
+	border-radius: 5px;
+}
+*::-webkit-scrollbar-track{
+	width: 5px;
+	height: 5px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.parabola{
+	transition-timing-function: cubic-bezier(0.23, 0.03, 0.86, -0.09);
 }

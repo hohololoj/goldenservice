@@ -1,0 +1,10 @@
+interface Props{
+	favorite: boolean
+}
+export default function IconFavorite(props: Props){
+	return(
+		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M5.83366 2.5C3.53283 2.5 1.66699 4.34667 1.66699 6.625C1.66699 8.46417 2.39616 12.8292 9.57366 17.2417C9.70223 17.3199 9.84983 17.3613 10.0003 17.3613C10.1508 17.3613 10.2984 17.3199 10.427 17.2417C17.6045 12.8292 18.3337 8.46417 18.3337 6.625C18.3337 4.34667 16.4678 2.5 14.167 2.5C11.8662 2.5 10.0003 5 10.0003 5C10.0003 5 8.13449 2.5 5.83366 2.5Z" stroke={props.favorite ? '#4295E4' : '#454F5B'} fill={props.favorite ? '#4295E4' : 'none'} strokeLinecap="round" strokeLinejoin="round"/>
+		</svg>
+	)
+}

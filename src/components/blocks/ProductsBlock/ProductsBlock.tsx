@@ -122,7 +122,7 @@ export default function ProductsBlock(props: Props){
 				}
 			}
 			const totalQuery_str = totalQuery_arr.join('&');
-			router.push(`/catalog/products/${props.cid}?${totalQuery_str}`);
+			router.push(`/catalog/${props.cid}?${totalQuery_str}`);
 		}
 
 		delete urlFilters.current['page'];
@@ -239,7 +239,7 @@ export default function ProductsBlock(props: Props){
 
 	function resetFilters(){
 		setActiveFilters((prev: any) => {return {...prev, page: 1}})
-		router.push(`/catalog/products/${props.cid}`);
+		router.push(`/catalog/${props.cid}`);
 	}
 
 	function onPaginationChange(e: React.ChangeEvent<unknown>, val: number){

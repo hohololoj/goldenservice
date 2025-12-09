@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/categories/[cid]/route": "app/api/categories/[cid]/route.js",
+  "/api/categories/route": "app/api/categories/route.js",
+  "/api/cdn/[...path]/route": "app/api/cdn/[...path]/route.js",
+  "/api/products/popular/route": "app/api/products/popular/route.js",
+  "/api/proxy/[[...path]]/route": "app/api/proxy/[[...path]]/route.js",
+  "/api/products/route": "app/api/products/route.js",
+  "/api/statistics/route": "app/api/statistics/route.js",
+  "/catalog/[cid]/[pid]/page": "app/catalog/[cid]/[pid]/page.js",
+  "/catalog/[cid]/page": "app/catalog/[cid]/page.js",
+  "/catalog/page": "app/catalog/page.js",
+  "/about/page": "app/about/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/bulk/page": "app/bulk/page.js",
+  "/delivery/page": "app/delivery/page.js",
+  "/order/page": "app/order/page.js"
+}

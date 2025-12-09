@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/categories/[cid]/route": "/api/categories/[cid]",
+  "/api/categories/route": "/api/categories",
+  "/api/cdn/[...path]/route": "/api/cdn/[...path]",
+  "/api/products/popular/route": "/api/products/popular",
+  "/api/proxy/[[...path]]/route": "/api/proxy/[[...path]]",
+  "/api/products/route": "/api/products",
+  "/api/statistics/route": "/api/statistics",
+  "/catalog/[cid]/[pid]/page": "/catalog/[cid]/[pid]",
+  "/catalog/[cid]/page": "/catalog/[cid]",
+  "/catalog/page": "/catalog",
+  "/about/page": "/about",
+  "/(home)/page": "/",
+  "/bulk/page": "/bulk",
+  "/delivery/page": "/delivery",
+  "/order/page": "/order"
+}
